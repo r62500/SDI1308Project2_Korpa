@@ -11,7 +11,7 @@
 
 // variables
 var catFood = "Purina One dry cat food";
-var myVariable = 1;
+var catMotivation = 2;
 var catActivities = [" eating", " sleeping", " scratching the scratching post", " using the litter box",  " staring at the wall"];
 
 // flow chart - predefined process (Procedure)
@@ -53,6 +53,14 @@ var dietPlan = function (canned, treat) {
 	return dietPlan
 };
 
+// flow chart - predefined process (Array Function)
+var exercise = function (energyLevel, thingsToDo) {
+	var activities = thingsToDo.length;
+	for (var i = energyLevel; i < activities; i = i + 1) {
+		console.log("My cat has some motivation so she is going to begin" + thingsToDo[i] + ".");
+	};
+	return lowEnergyActivities = [" eating", " sleeping"];
+};
 
 // outputs
 console.log("My cat is fat because she eats a lot of " + catFood + " and is lazy.");
@@ -67,5 +75,14 @@ eat(15);
 
 dietPlan("Friskies", "Pounce cat treats");
 
-console.log(dietPlan);
+exercise(catMotivation, catActivities);
 
+// flow chart - internal storage (Returned Values)
+// these returned values must be output to be visible, but all returned values are available at this point.
+
+// flow chart - final output
+console.log("My cat has " + eat + " pieces of dry food left.");
+console.log(dietPlan);
+console.log("Since my cat used all of her motivation she resumes her mellow activities such as" + lowEnergyActivities + ".");
+
+// flow chart - finish
