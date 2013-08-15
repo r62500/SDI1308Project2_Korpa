@@ -45,6 +45,15 @@ var eat = function (piecesOfFood) {
 	return eat = 0
 };
 
+// flow chart - predefined process (String Function)
+var dietPlan = function (canned, treat) {
+	var otherFood = "I have tried other food types such as ";
+	var gainWeight= " but they only make her gain weight faster and eat more.";
+	dietPlan = otherFood + canned +" and " + treat + gainWeight;
+	return dietPlan
+};
+
+
 // outputs
 console.log("My cat is fat because she eats a lot of " + catFood + " and is lazy.");
 
@@ -56,5 +65,7 @@ gotTired(1, 0);
 
 eat(15);
 
+dietPlan("Friskies", "Pounce cat treats");
 
+console.log(dietPlan);
 
