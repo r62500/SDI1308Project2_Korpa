@@ -80,9 +80,11 @@ exercise(catMotivation, catActivities);
 // flow chart - internal storage (Returned Values)
 // these returned values must be output to be visible, but all returned values are available at this point.
 
-// flow chart - final output
+// flow chart - final output (using returned values to display them in console)
 console.log("My cat has " + eat + " pieces of dry food left.");
+
 console.log(dietPlan);
+
 console.log("Since my cat used all of her motivation she resumes her mellow activities such as" + lowEnergyActivities + ".");
 
 // flow chart - finish
