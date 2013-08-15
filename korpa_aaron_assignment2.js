@@ -9,7 +9,7 @@
 
 //flow chart - internal storage (Variables: String, Number, Array)
 
-// variables(also declared the variables for the different functions here)
+// variables
 var catFood = "Purina One dry cat food";
 var myVariable = 1;
 var catActivities = [" eating", " sleeping", " scratching the scratching post", " using the litter box",  " staring at the wall"];
@@ -24,7 +24,6 @@ var feedCat = function (amountOfFood) {
 };
 
 // flow chart - predefined process (Boolean Function)
-
 var gotTired = function (timesUsedLitterbox, timesScratchedPost) { 
 	if (timesUsedLitterbox + timesScratchedPost >= 1) {
 		console.log("Once she has either used the litter box or scratched on the scratching post my cat goes to sleep again.");
@@ -36,12 +35,26 @@ var gotTired = function (timesUsedLitterbox, timesScratchedPost) {
 };
 
 // flow chart - predefined process (Number Function)
+var eat = function (piecesOfFood) {
+	var bite = 3;
+		while (piecesOfFood > 0) {
+		console.log("My cat notices that there are " + piecesOfFood + 
+		" bits of food in her food bowl, so she takes a bite. She can consume " + bite + " food bits each bite.");
+		piecesOfFood = piecesOfFood - bite;
+		};
+	return eat = 0
+};
 
 // outputs
-console.log("My cat is fat because it eats lots of " + catFood + " and is lazy.");
+console.log("My cat is fat because she eats a lot of " + catFood + " and is lazy.");
+
 console.log("Her day to day activities include" + catActivities + ".");
+
 feedCat(3);
+
 gotTired(1, 0);
+
+eat(15);
 
 
 
